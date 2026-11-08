@@ -35,3 +35,6 @@ jobs:
 
       - name: Traduções completas
         run: ./godot --headless --path . res://tools/tests/test_translations.tscn
+
+      - name: Orientação em paisagem
+        run: ./godot --headless --path . --script res://tools/tests/test_orientation.gd
