@@ -38,3 +38,6 @@ jobs:
 
       - name: Orientação em paisagem
         run: ./godot --headless --path . --script res://tools/tests/test_orientation.gd
+
+      - name: Alcance do AAB (API 24 e três ABIs)
+        run: ./godot --headless --path . --script res://tools/tests/test_android_reach.gd
