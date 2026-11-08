@@ -2,14 +2,18 @@ extends SceneTree
 
 ## O AAB da Play tem que alcançar Android 7+ (API 24) e as três ABIs que o app Flutter publicava.
 ## Sem min_sdk, o Godot sobe o mínimo para 29 com o renderer Mobile e corta Android 7, 8 e 9 (#30).
+## API 24 só vale com o fallback para OpenGL ligado: sem ele, aparelho sem Vulkan 1.1 não abre o jogo.
 ## Roda como script headless: godot --headless --path . --script res://tools/tests/test_android_reach.gd
 
 const AAB_PRESET_NAME := "Android AAB"
 const EXPECTED_MIN_SDK := "24"
 const REQUIRED_ARCHITECTURES := ["armeabi-v7a", "arm64-v8a", "x86_64"]
+const OPENGL_FALLBACK_SETTING := "rendering/rendering_device/fallback_to_opengl3"
 
 func _init() -> void:
 	var failures := check_aab_preset()
+	if not ProjectSettings.get_setting(OPENGL_FALLBACK_SETTING, false):
+		failures.append("%s desligado" % OPENGL_FALLBACK_SETTING)
 	for failure in failures:
 		print("FAIL " + failure)
 	print("FAILURES: %d" % failures.size())
