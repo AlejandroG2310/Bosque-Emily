@@ -1,105 +1,105 @@
-keys,pt_BR,it
-worldselect.title,Escolha o mundo,Scegli il mondo
-worldmap.world1.title,Mundo 1,Mondo 1
-worldmap.world1.name,Floresta Encantada,Foresta Incantata
-level11.phase,FASE 1,FASE 1
-level11.title,O Café da Manhã da Didi,La Colazione di Didi
-level12.phase,FASE 2,FASE 2
-level12.title,Recife das Cores,Barriera dei Colori
-level12.intro,O recife perdeu as cores... vamos pintar juntos?,La barriera ha perso i colori... coloriamo insieme?
-level12.ask,Pinte o coral de {0}!,Colora il corallo di {0}!
-level12.nudge,Vamos lá! Passe o pincel no coral!,Forza! Passa il pennello sul corallo!
-level13.phase,FASE 3,FASE 3
-level13.title,Trilha dos Números,Il Sentiero dei Numeri
-level13.intro,Eu perdi o caminho! Toque nos números na ordem certa para eu voar até o meu ninho!,Ho perso la strada! Tocca i numeri in ordine per farmi volare fino al mio nido!
-level14.phase,FASE 4,FASE 4
-level14.title,Quebra-cabeça da Sophy,Il Puzzle di Sophy
-level14.intro,Vamos montar esse quebra-cabeça juntos?,Montiamo insieme questo puzzle?
-level14.pieces,PEÇAS,PEZZI
-level15.phase,FASE 5,LIVELLO 5
-level15.title,Jogo da Memória da Didia,Il Memory di Didia
-level15.intro,Vamos brincar! Encontre todos os pares de bichinhos!,Giochiamo! Trova tutte le coppie di animaletti!
-level15.instruction,Encontre todos os pares para ajudar a Didia!,Trova tutte le coppie per aiutare Didia!
-level16.phase,FASE 6,LIVELLO 6
-level16.title,Labirinto do Alpiste,Il Labirinto dei Semini
-level16.intro,Estou com fome! Puxe o caminho e me leve até o alpiste!,Ho fame! Traccia il sentiero e portami dai semini!
-level16.hint,Vamos! Me leva até o alpiste!,Dai! Portami dai semini!
-level16.oops,Ops! Por aqui não dá!,Ops! Di qua non si passa!
-level17.phase,FASE 7,LIVELLO 7
-level17.title,Salada da Sophy,Insalata di Sophy
-level17.intro,"Vamos cortar os alimentos juntos? Passa o dedinho pra fatiar! Mas cuidado: não corte as bombinhas!","Tagliamo il cibo insieme? Passa il ditino per affettare! Ma attenzione: non tagliare le bombe!"
-level18.phase,FASE 8,LIVELLO 8
-level18.title,Jardim Colorido,Giardino Colorato
-level18.intro,Vamos guardar cada flor na cesta da cor dela?,Mettiamo ogni fiore nel cesto del suo colore?
-level18.flowers,FLORES,FIORI
-level19.phase,FASE 9,LIVELLO 9
-level19.title,Bolhas das Letras,Le Bolle delle Lettere
-level19.intro,Toca na bolha com a letra que eu falar!,Tocca la bolla con la lettera che dico io!
-level19.ask,Cadê a letra {0}?,Dov'è la lettera {0}?
-color.red,Vermelho,Rosso
-color.green,Verde,Verde
-color.yellow,Amarelo,Giallo
-color.blue,azul,blu
-color.orange,laranja,arancione
-color.purple,roxo,viola
-praise.great,Muito bem!,Molto bene!
-praise.congrats,Parabéns!,Perfetto!
-praise.excellent,Excelente!,Ottimo!
-praise.yes,Isso!,Esatto!
-quitmodal.question,Quer mesmo sair?,Vuoi davvero uscire?
-quitmodal.yes,Sim,Sì
-quitmodal.no,Não,No
-settings.music,Música,Musica
-settings.sfx,Efeitos,Effetti
-settings.quality,Qualidade,Qualità
-settings.quality.low,Baixa,Bassa
-settings.quality.medium,Média,Media
-settings.quality.high,Alta,Alta
-settings.language,Idioma,Lingua
-credits.role.creation,Criação,Creazione
-credits.role.programming,Programação,Programmazione
-credits.role.gamedesign,Game Design,Game design
-credits.social.gate.title,Peça ajuda a um adulto,Chiedi aiuto a un adulto
-credits.social.gate.instruction,Segure o botão por 3 segundos para abrir o link,Tieni premuto il pulsante per 3 secondi per aprire il link
-credits.social.gate.hold,Segurar,Tieni premuto
-credits.social.gate.back,Voltar,Indietro
-credits.site,Site do jogo,Sito del gioco
-credits.person.lucas.name,Lucas Dóro,Lucas Dóro
-credits.person.lucas.bio,"Idealizou e desenvolveu a Floresta dos Bichinhos Perdidos, cuidando de cada detalhe da floresta.","Ha ideato e sviluppato la Foresta degli Animaletti Perduti, curando ogni dettaglio della foresta."
-credits.person.joao.name,João Henrique Maricato,João Henrique Maricato
-credits.person.joao.bio,"Imagina novas aventuras para os bichinhos: traz ideias de fases e ajuda a deixar as que existem ainda mais divertidas.","Immagina nuove avventure per gli animaletti: propone idee per i livelli e aiuta a rendere ancora più divertenti quelli esistenti."
-level110.phase,FASE 10,LIVELLO 10
-level110.title,Os Bichinhos Perdidos,Gli Animaletti Perduti
-level110.intro,Os bichinhos se perderam no escuro! Leva o vaga-lume até eles e traz todo mundo pra fogueira.,Gli animaletti si sono persi nel buio! Porta la lucciola da loro e riporta tutti al falò.
-level110.nudge,Olha os olhinhos brilhando no escuro!,Guarda gli occhietti che brillano nel buio!
-loading.text,Carregando,Caricamento
-free_mode.title,Modo Livre,Modalità Libera
-free_mode.search,Buscar fase...,Cerca livello...
-free_mode.empty,Nenhuma fase encontrada,Nessun livello trovato
-free_mode.all,Todas,Tutte
-free_mode.by,por %s,di %s
-free_mode.studio,Floresta,Floresta
-skill.colors,Cores,Colori
-skill.numbers,Números,Numeri
-skill.letters,Letras,Lettere
-skill.memory,Memória,Memoria
-skill.coordination,Coordenação,Coordinazione
-mechanic.drag_drop,Arrastar,Trascinare
-mechanic.paint,Pintar,Dipingere
-mechanic.sequence,Sequência,Sequenza
-mechanic.assemble,Montar,Montare
-mechanic.memory,Memória,Memoria
-mechanic.path,Traçar caminho,Tracciare il percorso
-mechanic.action,Ação,Azione
-mechanic.pick_right,Escolher o certo,Scegliere giusto
-mechanic.guide,Conduzir,Guidare
-level11.description,Sirva as frutas certas na cesta.,Servi la frutta giusta nel cestino.
-level12.description,Pinte o coral com a cor pedida.,Dipingi il corallo del colore richiesto.
-level13.description,Toque nos números em ordem.,Tocca i numeri in ordine.
-level14.description,Monte o quebra-cabeça da floresta.,Completa il puzzle della foresta.
-level15.description,Encontre os pares de cartas.,Trova le coppie di carte.
-level16.description,Trace o caminho até o alpiste.,Traccia il percorso fino ai semini.
-level17.description,Corte as frutas e desvie da bomba.,Taglia la frutta ed evita la bomba.
-level18.description,Separe as flores nas cestas certas.,Metti i fiori nei cestini giusti.
-level19.description,Estoure a bolha da letra certa.,Scoppia la bolla della lettera giusta.
-level110.description,Leve os filhotes até a fogueira.,Porta i cuccioli fino al falò.
+keys,es_MX
+worldselect.title,Elige un mundo
+worldmap.world1.title,Mundo 1
+worldmap.world1.name,Bosque Encantado
+level11.phase,FASE 1
+level11.title,El desayuno de Didi
+level12.phase,FASE 2
+level12.title,Arrecife de Colores
+level12.intro,El arrecife perdió sus colores... ¿lo pintamos juntos?
+level12.ask,¡Pinta el coral de {0}!
+level12.nudge,¡Vamos! ¡Pasa el pincel por el coral!
+level13.phase,FASE 3
+level13.title,El camino de los números
+level13.intro,¡Me perdí! ¡Toca los números en orden para ayudarme a llegar a mi nido!
+level14.phase,FASE 4
+level14.title,El rompecabezas de Sophy
+level14.intro,¿Armamos este rompecabezas juntos?
+level14.pieces,PIEZAS
+level15.phase,FASE 5
+level15.title,El juego de memoria de Didia
+level15.intro,¡Vamos a jugar! ¡Encuentra todas las parejas de animalitos!
+level15.instruction,¡Encuentra todas las parejas para ayudar a Didia!
+level16.phase,FASE 6
+level16.title,El laberinto de las semillas
+level16.intro,¡Tengo hambre! ¡Traza el camino y llévame hasta las semillas!
+level16.hint,¡Vamos! ¡Llévame hasta las semillas!
+level16.oops,¡Ups! ¡Por aquí no se puede!
+level17.phase,FASE 7
+level17.title,La ensalada de Sophy
+level17.intro,"¿Cortamos los alimentos juntos? ¡Desliza tu dedito para cortarlos! ¡Pero cuidado con las bombitas!"
+level18.phase,FASE 8
+level18.title,Jardín de Colores
+level18.intro,¿Ponemos cada flor en la canasta de su color?
+level18.flowers,FLORES
+level19.phase,FASE 9
+level19.title,Burbujas de Letras
+level19.intro,¡Toca la burbuja con la letra que te diga!
+level19.ask,¿Dónde está la letra {0}?
+color.red,Rojo
+color.green,Verde
+color.yellow,Amarillo
+color.blue,Azul
+color.orange,Naranja
+color.purple,Morado
+praise.great,¡Muy bien!
+praise.congrats,¡Felicidades!
+praise.excellent,¡Excelente!
+praise.yes,¡Eso es!
+quitmodal.question,¿Quieres salir?
+quitmodal.yes,Sí
+quitmodal.no,No
+settings.music,Música
+settings.sfx,Efectos de sonido
+settings.quality,Calidad
+settings.quality.low,Baja
+settings.quality.medium,Media
+settings.quality.high,Alta
+settings.language,Idioma
+credits.role.creation,Creación
+credits.role.programming,Programación
+credits.role.gamedesign,Diseño del juego
+credits.social.gate.title,Pide ayuda a un adulto
+credits.social.gate.instruction,Mantén presionado el botón durante 3 segundos para abrir el enlace
+credits.social.gate.hold,Mantener presionado
+credits.social.gate.back,Volver
+credits.site,Sitio web del juego
+credits.person.lucas.name,Lucas Dóro
+credits.person.lucas.bio,"Ideó y desarrolló el Bosque de los Animalitos Perdidos, cuidando cada detalle del bosque."
+credits.person.joao.name,João Henrique Maricato
+credits.person.joao.bio,"Imagina nuevas aventuras para los animalitos: propone ideas para los niveles y ayuda a que los existentes sean aún más divertidos."
+level110.phase,FASE 10
+level110.title,Los animalitos perdidos
+level110.intro,¡Los animalitos se perdieron en la oscuridad! Guía a la luciérnaga hasta ellos y llévalos a todos a la fogata.
+level110.nudge,¡Mira los ojitos que brillan en la oscuridad!
+loading.text,Cargando
+free_mode.title,Modo libre
+free_mode.search,Buscar nivel...
+free_mode.empty,No se encontraron niveles
+free_mode.all,Todos
+free_mode.by,por %s
+free_mode.studio,Bosque
+skill.colors,Colores
+skill.numbers,Números
+skill.letters,Letras
+skill.memory,Memoria
+skill.coordination,Coordinación
+mechanic.drag_drop,Arrastrar
+mechanic.paint,Pintar
+mechanic.sequence,Secuencia
+mechanic.assemble,Armar
+mechanic.memory,Memoria
+mechanic.path,Trazar el camino
+mechanic.action,Acción
+mechanic.pick_right,Elegir la opción correcta
+mechanic.guide,Guiar
+level11.description,Coloca las frutas correctas en la canasta.
+level12.description,Pinta el coral del color indicado.
+level13.description,Toca los números en orden.
+level14.description,Arma el rompecabezas del bosque.
+level15.description,Encuentra las parejas de tarjetas.
+level16.description,Traza el camino hasta las semillas.
+level17.description,Corta las frutas y evita las bombitas.
+level18.description,Separa las flores en las canastas correctas.
+level19.description,Revienta la burbuja con la letra correcta.
+level110.description,Lleva a los animalitos hasta la fogata.

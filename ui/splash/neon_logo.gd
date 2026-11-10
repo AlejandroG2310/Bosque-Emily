@@ -1,8 +1,7 @@
 extends Node2D
 
-## Letreiro de neon da DOMA, copia da cena de packages/doma_splash do stackit
-## (neon_painter, layout, scene, word_text, timeline). Simbolo em unidades de
-## logo (caixa de 1024), texto em pixels; enquadramento sai da caixa da ARTE.
+## Logo animado de Aicrag Company. Conserva el brillo, reflejo y sonidos del splash.
+## La letra A se dibuja mediante trazos vectoriales.
 ##
 ## Cada camada de halo e' um traco largo desfocado. Aqui ela e' desenhada sem
 ## desfoque num SubViewport (halo_source.gd chama draw_halo) e borrada em duas
@@ -10,10 +9,8 @@ extends Node2D
 ## no piso espelha a tela pronta (shader neon_reflection), por isso o derrame
 ## de luz e a poeira entram depois dele (halo_source.gd chama draw_ambient).
 
-const LogoPaths := preload("res://ui/splash/logo_paths.gd")
-
-const PART_ONSET := {"D_PURPLE": 0.15, "D_WHITE": 0.70, "DPAD_CROSS": 1.30, "DPAD_BUTTONS": 1.60}
-const PART_DURATION := {"D_PURPLE": 0.70, "D_WHITE": 0.70, "DPAD_CROSS": 0.45, "DPAD_BUTTONS": 0.40}
+const PART_ONSET := {"A_LEFT": 0.15, "A_RIGHT": 0.70, "A_BAR_LEFT": 1.30, "A_BAR_RIGHT": 1.60}
+const PART_DURATION := {"A_LEFT": 0.70, "A_RIGHT": 0.70, "A_BAR_LEFT": 0.45, "A_BAR_RIGHT": 0.40}
 const WORD_ONSET := 2.05
 const WORD_DURATION := 0.55
 const FLASH_AT := 3.05
@@ -21,7 +18,7 @@ const SPLASH_END := 3.7
 ## Quedas de tubo entre o hold e o estouro: irregular de proposito.
 const BLACKOUTS := [[2.72, 2.80], [2.88, 2.93]]
 
-const PURPLE := Color("6c30d6")
+const PURPLE := Color("8B5CF6")
 const WHITE := Color("f6f6f8")
 
 ## Tubo, em unidades de logo: [largura, desfoque, alpha, quanto embranquece].
@@ -34,14 +31,14 @@ const WORD_LAYERS := [[0.22, 0.0], [0.60, 0.30], [1.0, 0.92]]
 const HALO_SCALE := 0.5
 
 const MARK_COVERAGE := 0.44
-const WORD_SCALE := 0.155
+const WORD_SCALE := 0.125
 const GAP_SCALE := 0.17
 const LIGHT_REACH := 0.30
 const DUST_COUNT := 40
 
 ## Baixo (~0.75) porque o post do jogo ja aplica bloom por cima.
 @export var glow := 0.75
-@export var studio_name := "Doma Studio"
+@export var studio_name := "Aicrag Company"
 @export var font: Font
 ## Gradiente radial branco -> transparente: derrame de luz no fundo.
 @export var light_texture: Texture2D
@@ -68,10 +65,10 @@ var _motes := []
 
 func _ready() -> void:
 	var raw := {
-		"D_PURPLE": LogoPaths.D_PURPLE,
-		"D_WHITE": LogoPaths.D_WHITE,
-		"DPAD_CROSS": LogoPaths.DPAD_CROSS,
-		"DPAD_BUTTONS": LogoPaths.DPAD_BUTTONS,
+		"A_LEFT": [PackedVector2Array([Vector2(340, 570), Vector2(510, 180)])],
+		"A_RIGHT": [PackedVector2Array([Vector2(510, 180), Vector2(680, 570)])],
+		"A_BAR_LEFT": [PackedVector2Array([Vector2(403, 425), Vector2(510, 425)])],
+		"A_BAR_RIGHT": [PackedVector2Array([Vector2(510, 425), Vector2(617, 425)])],
 	}
 	for part in raw:
 		_parts[part] = raw[part].map(_clean)
@@ -241,7 +238,7 @@ func _nearest_light(at: Vector2, lights: Array) -> Array:
 	return best
 
 func color_of(part: String) -> Color:
-	return PURPLE if part in ["D_PURPLE", "DPAD_BUTTONS"] else WHITE
+	return PURPLE if part in ["A_LEFT", "A_BAR_LEFT"] else WHITE
 
 func _logo_transform() -> Transform2D:
 	return Transform2D(0.0, Vector2.ONE * _scale, 0.0, _origin)
@@ -253,6 +250,9 @@ func _layout() -> void:
 	_scale = mark_width / _art.size.x
 	var mark_height := _art.size.y * _scale
 	_font_size = roundi(mark_width * WORD_SCALE)
+	if font:
+		while _font_size > 12 and font.get_string_size(studio_name, HORIZONTAL_ALIGNMENT_LEFT, -1, _font_size).x > _screen.x * 0.85:
+			_font_size -= 1
 	var word_width: float = font.get_string_size(studio_name, HORIZONTAL_ALIGNMENT_LEFT, -1, _font_size).x if font else 0.0
 	var gap := mark_height * GAP_SCALE
 	var total := mark_height + gap + _font_size
