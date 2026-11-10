@@ -1,0 +1,35 @@
+extends Node
+
+## Volumes, qualidade grafica e idioma, gravados em user://settings.cfg.
+
+signal changed(key: String)
+
+const CONFIG_PATH := "user://settings.cfg"
+const SECTION := "settings"
+
+var music_volume := 1.0
+var sfx_volume := 1.0
+var quality := 2
+var benchmarked := false
+var locale := "es_MX"
+var _config := ConfigFile.new()
+
+func _ready() -> void:
+	_config.load(CONFIG_PATH)
+	music_volume = _config.get_value(SECTION, "music_volume", music_volume)
+	sfx_volume = _config.get_value(SECTION, "sfx_volume", sfx_volume)
+	quality = _config.get_value(SECTION, "quality", quality)
+	benchmarked = _config.get_value(SECTION, "benchmarked", benchmarked)
+	locale = "es_MX"
+	TranslationServer.set_locale(locale)
+
+func set_value(key: String, value: Variant) -> void:
+	if key == "locale":
+		locale = "es_MX"
+		TranslationServer.set_locale(locale)
+		return
+
+	set(key, value)
+	_config.set_value(SECTION, key, value)
+	_config.save(CONFIG_PATH)
+	changed.emit(key)
