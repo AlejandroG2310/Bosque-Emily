@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Floresta dos Bichinhos Perdidos"
+config/name="El Bosque Mágico de Emily"
 config/version="0.1.0"
 run/main_scene="res://ui/splash/doma_splash.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
@@ -41,11 +41,9 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/handheld/orientation=4
 
-[editor_plugins]
-
 [internationalization]
 
-locale/translations=PackedStringArray("res://assets/i18n/ui.pt_BR.translation", "res://assets/i18n/ui.it.translation")
+locale/translations=PackedStringArray("res://assets/i18n/ui.es_MX.translation")
 
 [physics]
 

@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhahxwyvg06ob"
 path.s3tc="res://.godot/imported/Level19Background.png-3db63957c5452b64bff1c3947979cbd2.s3tc.ctex"
+path.etc2="res://.godot/imported/Level19Background.png-3db63957c5452b64bff1c3947979cbd2.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/art/Backgrounds/Level19Background.png"
-dest_files=["res://.godot/imported/Level19Background.png-3db63957c5452b64bff1c3947979cbd2.s3tc.ctex"]
+dest_files=["res://.godot/imported/Level19Background.png-3db63957c5452b64bff1c3947979cbd2.s3tc.ctex", "res://.godot/imported/Level19Background.png-3db63957c5452b64bff1c3947979cbd2.etc2.ctex"]
 
 [params]
 

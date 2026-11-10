@@ -1,7 +1,8 @@
+
 extends Node
 
-## Toca a voz TTS dos personagens no bus Voice, uma fala por vez.
-## Arquivos em res://assets/audio/Voice/<Personagem>/<locale>/<arquivo>.wav
+## Reproduce las voces de los personajes en el bus Voice.
+## Una voz a la vez.
 
 signal finished
 
@@ -13,7 +14,7 @@ func _ready() -> void:
 	add_child(_player)
 	_player.finished.connect(func() -> void: finished.emit())
 
-## Locale das pastas de voz usa hifen (pt-BR), o do jogo usa underline (pt_BR).
+## Temporalmente utilizamos las voces en portugués para probar.
 func locale_folder() -> String:
 	return Settings.locale.replace("_", "-")
 
@@ -22,12 +23,22 @@ func play(character: String, file_name: String) -> bool:
 	return play_path(path)
 
 func play_path(path: String) -> bool:
+	print("Buscando voz: ", path)
+
 	if not ResourceLoader.exists(path):
-		push_warning("Voz nao encontrada: " + path)
+		push_warning("Voz no encontrada: " + path)
 		return false
+
 	_player.stop()
 	_player.stream = load(path)
+
+	if _player.stream == null:
+		push_warning("No se pudo cargar: " + path)
+		return false
+
 	_player.play()
+	print("Reproduciendo voz: ", path)
+
 	return true
 
 func stop() -> void:

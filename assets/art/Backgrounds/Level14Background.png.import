@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj5yk58nci7tj"
 path.s3tc="res://.godot/imported/Level14Background.png-2542c455eca49aa9b9164265bb1b03c0.s3tc.ctex"
+path.etc2="res://.godot/imported/Level14Background.png-2542c455eca49aa9b9164265bb1b03c0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/art/Backgrounds/Level14Background.png"
-dest_files=["res://.godot/imported/Level14Background.png-2542c455eca49aa9b9164265bb1b03c0.s3tc.ctex"]
+dest_files=["res://.godot/imported/Level14Background.png-2542c455eca49aa9b9164265bb1b03c0.s3tc.ctex", "res://.godot/imported/Level14Background.png-2542c455eca49aa9b9164265bb1b03c0.etc2.ctex"]
 
 [params]
 

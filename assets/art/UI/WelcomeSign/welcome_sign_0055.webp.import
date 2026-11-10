@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://5t01wsi7nryc"
 path.s3tc="res://.godot/imported/welcome_sign_0055.webp-83c769d8afccb91753fe1de1517a30a0.s3tc.ctex"
+path.etc2="res://.godot/imported/welcome_sign_0055.webp-83c769d8afccb91753fe1de1517a30a0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/art/UI/WelcomeSign/welcome_sign_0055.webp"
-dest_files=["res://.godot/imported/welcome_sign_0055.webp-83c769d8afccb91753fe1de1517a30a0.s3tc.ctex"]
+dest_files=["res://.godot/imported/welcome_sign_0055.webp-83c769d8afccb91753fe1de1517a30a0.s3tc.ctex", "res://.godot/imported/welcome_sign_0055.webp-83c769d8afccb91753fe1de1517a30a0.etc2.ctex"]
 
 [params]
 

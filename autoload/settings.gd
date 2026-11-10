@@ -11,8 +11,7 @@ var music_volume := 1.0
 var sfx_volume := 1.0
 var quality := 2
 var benchmarked := false
-var locale := "pt_BR"
-
+var locale := "es_MX"
 var _config := ConfigFile.new()
 
 func _ready() -> void:
@@ -21,13 +20,16 @@ func _ready() -> void:
 	sfx_volume = _config.get_value(SECTION, "sfx_volume", sfx_volume)
 	quality = _config.get_value(SECTION, "quality", quality)
 	benchmarked = _config.get_value(SECTION, "benchmarked", benchmarked)
-	locale = _config.get_value(SECTION, "locale", locale)
+	locale = "es_MX"
 	TranslationServer.set_locale(locale)
 
 func set_value(key: String, value: Variant) -> void:
+	if key == "locale":
+		locale = "es_MX"
+		TranslationServer.set_locale(locale)
+		return
+
 	set(key, value)
 	_config.set_value(SECTION, key, value)
 	_config.save(CONFIG_PATH)
-	if key == "locale":
-		TranslationServer.set_locale(value)
 	changed.emit(key)
